@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#2d3033"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:background="#2d3033"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/input"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text=""
+            android:paddingEnd="10dp"
+            android:paddingStart="1dp"
+            android:gravity="center"
+            android:textAlignment="viewEnd"
+            android:paddingTop="5dp"
+            android:textSize="45sp"
+            android:elevation="1dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/ptsanscaption_bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#8A8A8A"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/output"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="1dp"
+            android:textAlignment="viewEnd"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:text=""
+            android:textStyle="bold"
+            android:fontFamily="@font/ptsanscaption_bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f2f3f5"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#fff"
+                android:background="@drawable/ripple_effect"
+                android:text="7"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:layout_weight="1"
+                android:onClick="seven"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="4"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:layout_weight="1"
+                android:onClick="four"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="1"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:layout_weight="1"
+                android:onClick="one"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="."
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="dot"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="8"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="eight"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="5"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="five"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="2"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="two"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="0"
+                android:layout_weight="1"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="zero"
+                android:textSize="25sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="9"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="nine"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="6"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="six"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="3"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="three"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_effect"
+                android:textColor="#fff"
+                android:text="="
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="equals"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f5"
+            android:gravity="center"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="clear"
+                android:text="c"
+                android:background="@drawable/rippletwo"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_backspace_black_24dp"
+                android:layout_weight="1"
+                android:background="@drawable/rippletwo"
+                android:elevation="2dp"
+                android:onClick="clr"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:textSize="25sp"
+
+                android:contentDescription="TODO" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rippletwo"
+                android:text="/"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="div"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rippletwo"
+                android:text="x"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="mul"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rippletwo"
+                android:text="-"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="sub"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rippletwo"
+                android:textColor="#fff"
+                android:text="+"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="add"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#f2f3f5"
+            android:gravity="center"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="paropen"
+                android:text="("
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:background="@drawable/rippletwo"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#3b75c7"
+                android:elevation="2dp"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:textColor="#3b75c7"
+                android:textSize="25sp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#3b75c7"
+                android:textColor="#fff"
+                android:clickable="false"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#3b75c7"
+                android:textColor="#fff"
+                android:clickable="false"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#3b75c7"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:clickable="false"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rippletwo"
+                android:text=")"
+                android:fontFamily="@font/sourcesanspro_semibold"
+                android:onClick="parclose"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
